@@ -290,10 +290,10 @@ a{
 }
 
 .btn{
-    width: 10vw;
+    width: 12vw;
     background: #000;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 1.5vh 2vw;
     border-radius: 10px;
     align-self: flex-end;
