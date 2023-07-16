@@ -177,7 +177,7 @@ a{
     width: 18vw;
     height: 15vh;
     background: #929DFF;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding:2vh 2vw;
     text-align: left;
     line-height: 2;
@@ -245,7 +245,7 @@ a{
 
 .card_text{
     color: white;
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center;
     margin-top: 6vh;
 }
