@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Delius+Unicase:wght@700&family=Inter:wght@700&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.grid{
+    height: 220vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(22, 1fr);
+}
+
+.nav{
+    position: fixed;
+    top: 0; 
+    height: 10vh;
+    width: 100vw;
+}
+
+.main{
+    grid-column: span 11;
+    grid-row-start: 2;
+    grid-row-end: 11;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon{
+    grid-column-start: 12;
+    grid-row-start: 5;
+    grid-row-end: span 3;
+    position: sticky;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.cards{
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row: span 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.plane{
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row: span 7;  
+}
+
+.chat{
+    position: fixed;
+    height: 10vh;
+    width: 8.3vw;
+    bottom: 5vh;
+    right: 0;
+}
+
+/* nav bar */
+.navi{
+    height: 10vh;
+    width: 100vw;
+    background: #6F6AF7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+.logo{
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Delius Unicase', cursive;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #FFF;
+}
+
+.nav_items{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.nav_links{
+    color: #FFF;
+}
+
+.drop_icon{
+    padding: 0 0 .2vh .5vw;
+}
+
+.search{
+    font-size: .8em;
+    padding: 1vh 1vw;
+    border-radius: 30px;
+    background-image: url(./assets/search.png);
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position: 95% 50%; 
+}
+
+.ham{
+    height: 3.5vh;
+}
+
+/* main */
+
+.coding{
+    width: 30%;
+    margin-left: 5%;
+}
+
+.panel{
+    width: 60%;
+    height: 62%;
+    background-color: #E5D8FF;
+    border-radius: 10px;
+}
+
+.panel_text{
+    padding: 3% 5%;
+    font-size: 1.5em;
+    line-height: 1.8;
+    color: #6F7373;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* apps */
+
+.app_icon{
+    background: #FFF;
+    height: 8vh;
+    width: 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+.app_img{
+    width: 2.5vw;
+    height: 5.5vh;
+    position: sticky;
+    top: 10px;
+}
+
+.card_items{
+    width: 18vw;
+    height: 15vh;
+    background: #929DFF;
+    font-size: 1.5em;
+    padding:2vh 2vw;
+    text-align: left;
+    line-height: 2;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    color: #FFF;
+    border-radius: 10px;
+}
+
+.blue{
+    background: #734CF2;
+}
+
+.purple{
+    background: #D288FF;
+}
+
+.black{
+    background: #000;
+}
+
+/* plane */
+
+.plane_holder{
+    height: 100%;
+    width: 100%;
+    background: #493EFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.left{
+    height: 90%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right{
+    height: 90%;
+    width: 65%;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+}
+
+.card{
+    width: 100%;
+    height: 25%;
+    background: #BCE0F6;
+    border: solid 5px black;
+    border-radius: 10px;
+}
+
+.dark{
+    background: none;
+    border: solid 5px #fff;
+}
+
+.card_text{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 6vh;
+}
+
+.light{
+    color: #000;
+}
+
+.content{
+    margin: 5vh;
+    margin-top: 3vh;
+    line-height: 2.5;
+}
+
+.content>h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7em;
+    letter-spacing: .3vw;
+}
+.content>p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    margin-left: 2vw;
+    text-indent: 1vw;
+    display: inline;
+}
+
+.label{
+    font-weight: 700;
+    word-spacing: 1vw;
+}
+.short{
+    word-spacing: 1.5vw;
+}
+
+.btn{
+    width: 10vw;
+    background: #000;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 1.5vh 2vw;
+    border-radius: 10px;
+    align-self: flex-end;
+    margin: 0 2vw 3vh;
+}
+
+.arrow{
+    width: 1.7vw;
+    margin-left: 8px;
+}
+
+/* chat */
+.chat_back{
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    border: solid 3px black;
+    border-radius: 50%;
+}
+
+.chat_icon{
+    width:75%;
+    margin: 10%;
+}
