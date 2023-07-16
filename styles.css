@@ -248,6 +248,14 @@ a{
     font-size: 1.5em;
     text-align: center;
     margin-top: 6vh;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+}
+
+.card_items{
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .light{
